@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url=https://facebook.com" />
     <title>Redirecting...</title>
+    <script>
+      // Define the redirect URL in one place
+      const redirectUrl = "https://www.instagram.com/_dev_clicks__";
+
+      // Update the static meta refresh tag
+      document
+        .querySelector('meta[http-equiv="refresh"]')
+        .setAttribute("content", "0; url=" + redirectUrl);
+
+      // Update the fallback link
+      document.querySelector(".fallback-link").href = redirectUrl;
+
+      // JavaScript redirect (faster)
+      window.location.replace(redirectUrl);
+    </script>
+    <!-- Static meta refresh as fallback -->
+    <meta
+      http-equiv="refresh"
+      content="0; url=https://www.instagram.com/_dev_clicks__"
+    />
   </head>
   <body>
     <p>Redirecting...</p>
+    <noscript>
+      If you are not redirected,
+      <a href="https://www.instagram.com/_dev_clicks__" class="fallback-link"
+        >click here</a
+      >.
+    </noscript>
   </body>
 </html>
 
-<!-- devclicks.pixiset.com -->
+<!-- https://devclicks.mypixieset.com/ -->
+<!-- https://www.instagram.com/_dev_clicks__ -->

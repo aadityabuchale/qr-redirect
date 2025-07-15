@@ -1,38 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Redirecting...</title>
-    <script>
-      // Define the redirect URL in one place
-      const redirectUrl = "https://devclicks.mypixieset.com/";
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      // Update the static meta refresh tag
-      document
-        .querySelector('meta[http-equiv="refresh"]')
-        .setAttribute("content", "0; url=" + redirectUrl);
-
-      // Update the fallback link
-      document.querySelector(".fallback-link").href = redirectUrl;
-
-      // JavaScript redirect (faster)
-      window.location.replace(redirectUrl);
-    </script>
-    <!-- Static meta refresh as fallback -->
-    <meta
-      http-equiv="refresh"
-      content="0; url=https://devclicks.mypixieset.com/"
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css"
     />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Devraj Buchale - Protographer</title>
   </head>
   <body>
-    <p>Redirecting...</p>
-    <noscript>
-      If you are not redirected,
-      <a href="https://devclicks.mypixieset.com/" class="fallback-link"
-        >click here</a
-      >.
-    </noscript>
+    <div class="container">
+      <article class="card__article">
+        <div class="card__profile">
+          <img
+            src="./assets/img/phptpgraphy-logo.jpg"
+            alt="image"
+            class="card__profile-img"
+          />
+        </div>
+
+        <div class="card__tooltip show-tooltip">
+          <div class="card__content">
+            <header class="card__header">
+              <span>Social</span>
+
+              <div class="card__social">
+                <a
+                  href="https://www.instagram.com/_dev_clicks__/"
+                  target="_blank"
+                  class="social-pill"
+                >
+                  <i class="ri-instagram-line"></i>
+                  <span>Instagram</span>
+                </a>
+                <a
+                  href="https://devclicks.mypixieset.com/"
+                  target="_blank"
+                  class="social-pill"
+                >
+                  <i class="ri-link"></i>
+                  <span>Website</span>
+                </a>
+              </div>
+            </header>
+
+            <div class="card__data">
+              <div class="card__image">
+                <div class="card__mask">
+                  <img
+                    src="./assets/img/dev-profile.PNG"
+                    alt="image"
+                    class="card__img"
+                  />
+                </div>
+
+                <span class="card__status"></span>
+              </div>
+
+              <h2 class="card__name">Devraj Buchale</h2>
+              <h3 class="card__profession">Photographer</h3>
+
+              <a
+                href="https://wa.me/91788172820"
+                class="card__button"
+                target="_blank"
+              >
+                <i class="ri-chat-3-line"></i>
+                <span>Get Enquiry</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <script src="./script.js"></script>
   </body>
 </html>
-
-<!-- https://devclicks.mypixieset.com/ -->
-<!-- https://www.instagram.com/_dev_clicks__ -->
